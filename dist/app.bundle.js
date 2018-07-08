@@ -6285,9 +6285,9 @@ var Wrapper = function (_React$Component) {
             display: "block",
             margin: "0",
             padding: "1em",
-            color: "rgba(0,0,0,.7)",
+            color: "#3d4852",
             minWidth: '1008px',
-            backgroundColor: 'rgb(244, 245, 247)'
+            backgroundColor: 'white'
         };
         if (_this.props.fontSize) {
             _this.layoutStyle = Object.assign(_this.layoutStyle, { fontSize: _this.props.fontSize });
@@ -6295,8 +6295,8 @@ var Wrapper = function (_React$Component) {
         if (_this.props.color) {
             _this.layoutStyle = Object.assign(_this.layoutStyle, { color: _this.props.color });
         }
-        if (_this.props.backgroundColor) {
-            _this.layoutStyle = Object.assign(_this.layoutStyle, { backgroundColor: _this.props.backgroundColor });
+        if (_this.props.bgColor) {
+            _this.layoutStyle = Object.assign(_this.layoutStyle, { backgroundColor: _this.props.bgColor });
         }
         if (screen.width <= 500) {
             _this.layoutStyle = Object.assign(_this.layoutStyle, { width: '100%', padding: '.5em 0' });
@@ -6561,6 +6561,9 @@ var Grid25 = function (_React$Component) {
         if (_this.props.bgColor) {
             _this.styleGrid25 = Object.assign(_this.styleGrid25, { backgroundColor: _this.props.bgColor });
         }
+        if (_this.props.bordr) {
+            _this.styleGrid25 = Object.assign(_this.styleGrid25, { border: _this.props.bordr });
+        }
         if (screen.width <= 500) {
             _this.styleGrid25 = Object.assign(_this.styleGrid25, { width: '100%', padding: '1em 0' });
         }
@@ -6636,6 +6639,9 @@ var Grid50 = function (_React$Component) {
         if (_this.props.bgColor) {
             _this.styleGrid50 = Object.assign(_this.styleGrid50, { backgroundColor: _this.props.bgColor });
         }
+        if (_this.props.bordr) {
+            _this.styleGrid50 = Object.assign(_this.styleGrid50, { border: _this.props.bordr });
+        }
         if (screen.width <= 500) {
             _this.styleGrid50 = Object.assign(_this.styleGrid50, { width: '100%', padding: '1em 0' });
         }
@@ -6710,6 +6716,9 @@ var Grid75 = function (_React$Component) {
         };
         if (_this.props.bgColor) {
             _this.styleGrid75 = Object.assign(_this.styleGrid75, { backgroundColor: _this.props.bgColor });
+        }
+        if (_this.props.bordr) {
+            _this.styleGrid75 = Object.assign(_this.styleGrid75, { border: _this.props.bordr });
         }
         if (screen.width <= 500) {
             _this.styleGrid75 = Object.assign(_this.styleGrid75, { width: '100%', padding: '1em 0' });
@@ -8027,7 +8036,7 @@ var App = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             _layout.Grid50,
-                            { bgColor: 'white' },
+                            { bgColor: '#f1f5f8' },
                             _react2.default.createElement(
                                 _text.P,
                                 null,
@@ -8087,7 +8096,7 @@ var App = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 _layout.Grid50,
-                                { bgColor: 'white' },
+                                { bgColor: '#f1f5f8' },
                                 _react2.default.createElement(
                                     _text.P,
                                     { color: 'black' },
@@ -8121,7 +8130,7 @@ var App = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 _layout.Grid75,
-                                { bgColor: 'white' },
+                                { bgColor: '#f1f5f8' },
                                 _react2.default.createElement(
                                     _text.P,
                                     { color: 'black' },
@@ -8202,7 +8211,7 @@ var App = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 _layout.Grid25,
-                                { bgColor: 'white' },
+                                { bgColor: '#f1f5f8' },
                                 _react2.default.createElement(
                                     _text.P,
                                     null,

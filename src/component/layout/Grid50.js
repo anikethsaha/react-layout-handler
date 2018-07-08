@@ -13,6 +13,9 @@ class Grid50 extends React.Component {
         if(this.props.bgColor){
             this.styleGrid50 = Object.assign(this.styleGrid50,{backgroundColor:this.props.bgColor })
         }
+        if(this.props.bordr){
+            this.styleGrid50 = Object.assign(this.styleGrid50,{border:this.props.bordr })
+        }
         if(screen.width <= 500){
             this.styleGrid50 = Object.assign(this.styleGrid50,{width:'100%',padding:'1em 0' })
         }

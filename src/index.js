@@ -31,7 +31,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <Wrapper >
+            <Wrapper  >
                 <Container>
                     <XLT align={'center'} >This is <Code>&lt;XLT/&gt;</Code>  Extra Large Title </XLT>
                     <LT align={'center'} >This is <Code>&lt;LT/&gt;</Code> Large Title </LT>
@@ -39,7 +39,7 @@ class App extends React.Component {
                     <ST align={'center'} >This is <Code>&lt;ST/&gt;</Code> Small Title </ST>
                     <H1 align={'center'}>&lt;h1&gt; tag as <Code> &lt;H1 /&gt; </Code></H1>
                     <div>
-                        <Grid50 bgColor={'white'}>
+                        <Grid50 bgColor={'#f1f5f8'}  >
 
                             <P>
                             This is
@@ -76,7 +76,7 @@ class App extends React.Component {
                                     </Code>
                                     half color:'white'</P>
                             </Grid50>
-                            <Grid50 bgColor={'white'}>
+                            <Grid50 bgColor={'#f1f5f8'}  >
                                 <P color={'black'}>THis is
                                 <Code>
                                     &lt;Grid50/&gt;
@@ -93,7 +93,7 @@ class App extends React.Component {
                                 </Code>
                                 </P>
                             </Grid25>
-                            <Grid75 bgColor={'white'}>
+                            <Grid75 bgColor={'#f1f5f8'}  >
                                 <P color={'black'}>THis is
                                 <br/>
                                     <Code>
@@ -111,7 +111,7 @@ class App extends React.Component {
                                     </Code>s
                                     </P>
                                 </Grid25>
-                                <Grid25 bgColor={'white'}>
+                                <Grid25 bgColor={'white'}  >
                                     <P align={'center'} fntSz={'1.2em'} fntWt={'600'}>
                                        inside
                                     </P>
@@ -133,7 +133,7 @@ class App extends React.Component {
                                 <Grid25 bgColor={'grey'}>
                                     <P>25 </P>
                                 </Grid25>
-                                <Grid25 bgColor={'white'}>
+                                <Grid25 bgColor={'#f1f5f8'} >
                                     <P>25 </P>
                                 </Grid25>
                                 <Grid25 bgColor={'grey'}>

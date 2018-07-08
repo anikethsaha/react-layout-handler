@@ -13,6 +13,9 @@ class Grid25 extends React.Component {
         if(this.props.bgColor){
             this.styleGrid25 = Object.assign(this.styleGrid25,{backgroundColor:this.props.bgColor })
         }
+        if(this.props.bordr){
+            this.styleGrid25 = Object.assign(this.styleGrid25,{border:this.props.bordr })
+        }
         if(screen.width <= 500){
             this.styleGrid25 = Object.assign(this.styleGrid25,{width:'100%',padding:'1em 0' })
         }
