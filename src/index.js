@@ -9,6 +9,12 @@ import {
      FullWidth
 
 } from './component/layout'
+import {
+    Menu,
+    Nav,
+    MenuContainer
+
+} from './component/navbar'
 import { Card } from "./component/cards";
 import {
      H1,
@@ -31,7 +37,36 @@ class App extends React.Component {
 
     render() {
         return (
-            <Wrapper  >
+            <main>
+            <Nav>
+                <Container>
+                    <Grid50>
+                         <H3>
+                            ReactSkeleton
+                         </H3>
+                    </Grid50>
+                    <Grid50>
+                        <Grid25></Grid25>
+                        <Grid75 p={'0'}>
+                            <MenuContainer>
+                                <Menu>
+                                    <a>Home</a>
+                                </Menu>
+                                <Menu>
+                                    <a>About</a>
+                                </Menu>
+                                <Menu>
+                                    <a>Contact</a>
+                                </Menu>
+                                <Menu>
+                                    <a>Team</a>
+                                </Menu>
+                            </MenuContainer>
+                        </Grid75>
+                    </Grid50>
+                </Container>
+            </Nav>
+            <Wrapper bgColor={'#f8fafc'}  >
                 <Container>
                     <XLT align={'center'} >This is <Code>&lt;XLT/&gt;</Code>  Extra Large Title </XLT>
                     <LT align={'center'} >This is <Code>&lt;LT/&gt;</Code> Large Title </LT>
@@ -151,6 +186,7 @@ class App extends React.Component {
                     </div>
                     </Container>
             </Wrapper>
+            </main>
         );
     }
 }

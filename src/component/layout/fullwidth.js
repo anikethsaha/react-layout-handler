@@ -12,6 +12,12 @@ class FullWidth extends React.Component {
         if(this.props.bgColor){
             this.styleFullwidth = Object.assign(this.styleFullwidth,{backgroundColor:this.props.bgColor })
         }
+        if(this.props.p){
+            this.styleFullwidth = Object.assign(this.styleFullwidth,{padding:this.props.p })
+        }
+        if(this.props.m){
+            this.styleFullwidth = Object.assign(this.styleFullwidth,{margin:this.props.m })
+        }
         if(screen.width <= 500){
             this.styleFullwidth = Object.assign(this.styleFullwidth,{width:'100%',padding:'1em 0' })
         }

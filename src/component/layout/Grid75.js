@@ -16,6 +16,12 @@ class Grid75 extends React.Component {
         if(this.props.bordr){
             this.styleGrid75 = Object.assign(this.styleGrid75,{border:this.props.bordr })
         }
+        if(this.props.p){
+            this.styleGrid75 = Object.assign(this.styleGrid75,{padding:this.props.p })
+        }
+        if(this.props.m){
+            this.styleGrid75 = Object.assign(this.styleGrid75,{margin:this.props.m })
+        }
         if(screen.width <= 500){
             this.styleGrid75 = Object.assign(this.styleGrid75,{width:'100%',padding:'1em 0' })
         }

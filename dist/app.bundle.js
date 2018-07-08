@@ -6299,7 +6299,7 @@ var Wrapper = function (_React$Component) {
             _this.layoutStyle = Object.assign(_this.layoutStyle, { backgroundColor: _this.props.bgColor });
         }
         if (screen.width <= 500) {
-            _this.layoutStyle = Object.assign(_this.layoutStyle, { width: '100%', padding: '.5em 0' });
+            _this.layoutStyle = Object.assign(_this.layoutStyle, { width: '100%', padding: '.5em 0', textAlign: 'center' });
         }
         console.log('this.layoutStyle :', _this.layoutStyle);
         return _this;
@@ -6486,7 +6486,9 @@ var Container = function (_React$Component) {
             width: '90%',
             margin: '0 auto',
             padding: '0 10px',
-            boxSizing: 'border-box'
+            boxSizing: 'border-box',
+
+            fontFamily: 'system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif'
         };
         if (screen.width <= 500) {
             _this.contianerStyle = Object.assign(_this.contianerStyle, { width: '100%', padding: '.5em 0' });
@@ -6563,6 +6565,12 @@ var Grid25 = function (_React$Component) {
         }
         if (_this.props.bordr) {
             _this.styleGrid25 = Object.assign(_this.styleGrid25, { border: _this.props.bordr });
+        }
+        if (_this.props.p) {
+            _this.styleGrid25 = Object.assign(_this.styleGrid25, { padding: _this.props.p });
+        }
+        if (_this.props.m) {
+            _this.styleGrid25 = Object.assign(_this.styleGrid25, { margin: _this.props.m });
         }
         if (screen.width <= 500) {
             _this.styleGrid25 = Object.assign(_this.styleGrid25, { width: '100%', padding: '1em 0' });
@@ -6642,6 +6650,12 @@ var Grid50 = function (_React$Component) {
         if (_this.props.bordr) {
             _this.styleGrid50 = Object.assign(_this.styleGrid50, { border: _this.props.bordr });
         }
+        if (_this.props.p) {
+            _this.styleGrid50 = Object.assign(_this.styleGrid50, { padding: _this.props.p });
+        }
+        if (_this.props.m) {
+            _this.styleGrid50 = Object.assign(_this.styleGrid50, { margin: _this.props.m });
+        }
         if (screen.width <= 500) {
             _this.styleGrid50 = Object.assign(_this.styleGrid50, { width: '100%', padding: '1em 0' });
         }
@@ -6720,6 +6734,12 @@ var Grid75 = function (_React$Component) {
         if (_this.props.bordr) {
             _this.styleGrid75 = Object.assign(_this.styleGrid75, { border: _this.props.bordr });
         }
+        if (_this.props.p) {
+            _this.styleGrid75 = Object.assign(_this.styleGrid75, { padding: _this.props.p });
+        }
+        if (_this.props.m) {
+            _this.styleGrid75 = Object.assign(_this.styleGrid75, { margin: _this.props.m });
+        }
         if (screen.width <= 500) {
             _this.styleGrid75 = Object.assign(_this.styleGrid75, { width: '100%', padding: '1em 0' });
         }
@@ -6794,6 +6814,12 @@ var FullWidth = function (_React$Component) {
         if (_this.props.bgColor) {
             _this.styleFullwidth = Object.assign(_this.styleFullwidth, { backgroundColor: _this.props.bgColor });
         }
+        if (_this.props.p) {
+            _this.styleFullwidth = Object.assign(_this.styleFullwidth, { padding: _this.props.p });
+        }
+        if (_this.props.m) {
+            _this.styleFullwidth = Object.assign(_this.styleFullwidth, { margin: _this.props.m });
+        }
         if (screen.width <= 500) {
             _this.styleFullwidth = Object.assign(_this.styleFullwidth, { width: '100%', padding: '1em 0' });
         }
@@ -6862,6 +6888,298 @@ exports.Grid50 = _Grid2.default;
 exports.Grid25 = _Grid4.default;
 exports.Grid75 = _Grid6.default;
 exports.FullWidth = _fullWidth2.default;
+
+/***/ }),
+
+/***/ "./src/component/navbar/index.js":
+/*!***************************************!*\
+  !*** ./src/component/navbar/index.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.MenuContainer = exports.Nav = exports.Menu = undefined;
+
+var _menus = __webpack_require__(/*! ./menus */ "./src/component/navbar/menus.js");
+
+var _menus2 = _interopRequireDefault(_menus);
+
+var _nav = __webpack_require__(/*! ./nav */ "./src/component/navbar/nav.js");
+
+var _nav2 = _interopRequireDefault(_nav);
+
+var _menuContainer = __webpack_require__(/*! ./menuContainer */ "./src/component/navbar/menuContainer.js");
+
+var _menuContainer2 = _interopRequireDefault(_menuContainer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Menu = _menus2.default;
+exports.Nav = _nav2.default;
+exports.MenuContainer = _menuContainer2.default;
+
+/***/ }),
+
+/***/ "./src/component/navbar/menuContainer.js":
+/*!***********************************************!*\
+  !*** ./src/component/navbar/menuContainer.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MenuContainer = function (_React$Component) {
+    _inherits(MenuContainer, _React$Component);
+
+    function MenuContainer(props) {
+        _classCallCheck(this, MenuContainer);
+
+        var _this = _possibleConstructorReturn(this, (MenuContainer.__proto__ || Object.getPrototypeOf(MenuContainer)).call(this, props));
+
+        _this.styleMenuContainer = {
+            width: '100%',
+            backgroundColor: 'white',
+            float: 'right'
+        };
+        if (_this.props.bgColor) {
+            _this.styleMenuContainer = Object.assign(_this.styleMenuContainer, { backgroundColor: _this.props.bgColor });
+        }
+        if (_this.props.position) {
+            _this.styleMenuContainer = Object.assign(_this.styleMenuContainer, { position: _this.props.position });
+        }
+        if (_this.props.height) {
+            _this.styleMenuContainer = Object.assign(_this.styleMenuContainer, { height: _this.props.height });
+        }
+        if (screen.width <= 500) {
+            _this.styleMenuContainer = Object.assign(_this.styleMenuContainer, { width: '100%', padding: '1em 0' });
+        }
+        return _this;
+    }
+
+    _createClass(MenuContainer, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'ul',
+                { style: this.styleMenuContainer },
+                this.props.children
+            );
+        }
+    }]);
+
+    return MenuContainer;
+}(_react2.default.Component);
+
+MenuContainer.propTypes = {};
+
+exports.default = MenuContainer;
+
+/***/ }),
+
+/***/ "./src/component/navbar/menus.js":
+/*!***************************************!*\
+  !*** ./src/component/navbar/menus.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Menu = function (_React$Component) {
+    _inherits(Menu, _React$Component);
+
+    function Menu(props) {
+        _classCallCheck(this, Menu);
+
+        var _this = _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props));
+
+        _this.styleMenu = {
+            width: 'fit-content',
+            padding: '0 .1em',
+            marginRight: '.5em',
+            backgroundColor: 'white',
+            float: 'left',
+            listStyle: 'none',
+            fontSize: '1.125rem',
+            color: '#606f7b',
+            textDecoration: 'none',
+            lineHeight: '1.15'
+        };
+        _this.alinkStyle = {
+            fontWeight: '600',
+            textDecoration: 'none',
+            color: '#606f7b'
+        };
+        if (_this.props.bgColor) {
+            _this.styleMenu = Object.assign(_this.styleMenu, { backgroundColor: _this.props.bgColor });
+        }
+        if (_this.props.position) {
+            _this.styleMenu = Object.assign(_this.styleMenu, { position: _this.props.position });
+        }
+        if (_this.props.height) {
+            _this.styleMenu = Object.assign(_this.styleMenu, { height: _this.props.height });
+        }
+        if (screen.width <= 500) {
+            _this.styleMenu = Object.assign(_this.styleMenu, { width: '100%', padding: '1em 0' });
+        }
+        return _this;
+    }
+
+    _createClass(Menu, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'li',
+                { style: this.styleMenu },
+                _react2.default.createElement(
+                    'a',
+                    { href: this.props.alink || '#', style: this.alinkStyle },
+                    this.props.children
+                )
+            );
+        }
+    }]);
+
+    return Menu;
+}(_react2.default.Component);
+
+Menu.propTypes = {};
+
+exports.default = Menu;
+
+/***/ }),
+
+/***/ "./src/component/navbar/nav.js":
+/*!*************************************!*\
+  !*** ./src/component/navbar/nav.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Nav = function (_React$Component) {
+    _inherits(Nav, _React$Component);
+
+    function Nav(props) {
+        _classCallCheck(this, Nav);
+
+        var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
+
+        _this.styleNav = {
+            width: '100%',
+            padding: '.5em 0',
+            height: '2.5em',
+            backgroundColor: 'white'
+        };
+        if (_this.props.bgColor) {
+            _this.styleNav = Object.assign(_this.styleNav, { backgroundColor: _this.props.bgColor });
+        }
+        if (_this.props.position) {
+            _this.styleNav = Object.assign(_this.styleNav, { position: _this.props.position });
+        }
+        if (_this.props.height) {
+            _this.styleNav = Object.assign(_this.styleNav, { height: _this.props.height });
+        }
+        if (screen.width <= 500) {
+            _this.styleNav = Object.assign(_this.styleNav, { width: '100%', padding: '1em 0' });
+        }
+        return _this;
+    }
+
+    _createClass(Nav, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'nav',
+                { style: this.styleNav },
+                this.props.children
+            );
+        }
+    }]);
+
+    return Nav;
+}(_react2.default.Component);
+
+Nav.propTypes = {};
+
+exports.default = Nav;
 
 /***/ }),
 
@@ -7947,6 +8265,8 @@ var _component = __webpack_require__(/*! ./component */ "./src/component/index.j
 
 var _layout = __webpack_require__(/*! ./component/layout */ "./src/component/layout/index.js");
 
+var _navbar = __webpack_require__(/*! ./component/navbar */ "./src/component/navbar/index.js");
+
 var _cards = __webpack_require__(/*! ./component/cards */ "./src/component/cards/index.js");
 
 var _text = __webpack_require__(/*! ./component/text */ "./src/component/text/index.js");
@@ -7972,213 +8292,239 @@ var App = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                _component.Wrapper,
+                'main',
                 null,
                 _react2.default.createElement(
-                    _layout.Container,
+                    _navbar.Nav,
                     null,
                     _react2.default.createElement(
-                        _text.XLT,
-                        { align: 'center' },
-                        'This is ',
-                        _react2.default.createElement(
-                            _text.Code,
-                            null,
-                            '<XLT/>'
-                        ),
-                        '  Extra Large Title '
-                    ),
-                    _react2.default.createElement(
-                        _text.LT,
-                        { align: 'center' },
-                        'This is ',
-                        _react2.default.createElement(
-                            _text.Code,
-                            null,
-                            '<LT/>'
-                        ),
-                        ' Large Title '
-                    ),
-                    _react2.default.createElement(
-                        _text.MT,
-                        null,
-                        'This is ',
-                        _react2.default.createElement(
-                            _text.Code,
-                            null,
-                            '<MT/>'
-                        ),
-                        ' Medium Title! This Time centre is False  '
-                    ),
-                    _react2.default.createElement(
-                        _text.ST,
-                        { align: 'center' },
-                        'This is ',
-                        _react2.default.createElement(
-                            _text.Code,
-                            null,
-                            '<ST/>'
-                        ),
-                        ' Small Title '
-                    ),
-                    _react2.default.createElement(
-                        _text.H1,
-                        { align: 'center' },
-                        '<h1> tag as ',
-                        _react2.default.createElement(
-                            _text.Code,
-                            null,
-                            ' <H1 /> '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
+                        _layout.Container,
                         null,
                         _react2.default.createElement(
                             _layout.Grid50,
-                            { bgColor: '#f1f5f8' },
+                            null,
                             _react2.default.createElement(
-                                _text.P,
+                                _text.H3,
                                 null,
-                                'This is',
-                                _react2.default.createElement(
-                                    _text.Code,
-                                    null,
-                                    '<Grid50/>'
-                                ),
-                                'Grid Layout Component With',
-                                _react2.default.createElement(
-                                    _text.Code,
-                                    null,
-                                    '<Card/>'
-                                ),
-                                'Card area'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _layout.Grid50,
-                            { bgColor: 'grey' },
-                            _react2.default.createElement(
-                                _text.P,
-                                { color: 'white' },
-                                'This is',
-                                _react2.default.createElement(
-                                    _text.Code,
-                                    null,
-                                    '<Grid50/>'
-                                ),
-                                'Grid Layout Component With',
-                                _react2.default.createElement(
-                                    _text.Code,
-                                    null,
-                                    '<Card/>'
-                                ),
-                                'Card area'
+                                'ReactSkeleton'
                             )
                         ),
                         _react2.default.createElement(
                             _layout.Grid50,
                             null,
+                            _react2.default.createElement(_layout.Grid25, null),
+                            _react2.default.createElement(
+                                _layout.Grid75,
+                                { p: '0' },
+                                _react2.default.createElement(
+                                    _navbar.MenuContainer,
+                                    null,
+                                    _react2.default.createElement(
+                                        _navbar.Menu,
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            null,
+                                            'Home'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        _navbar.Menu,
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            null,
+                                            'About'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        _navbar.Menu,
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            null,
+                                            'Contact'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        _navbar.Menu,
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            null,
+                                            'Team'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _component.Wrapper,
+                    { bgColor: '#f8fafc' },
+                    _react2.default.createElement(
+                        _layout.Container,
+                        null,
+                        _react2.default.createElement(
+                            _text.XLT,
+                            { align: 'center' },
+                            'This is ',
+                            _react2.default.createElement(
+                                _text.Code,
+                                null,
+                                '<XLT/>'
+                            ),
+                            '  Extra Large Title '
+                        ),
+                        _react2.default.createElement(
+                            _text.LT,
+                            { align: 'center' },
+                            'This is ',
+                            _react2.default.createElement(
+                                _text.Code,
+                                null,
+                                '<LT/>'
+                            ),
+                            ' Large Title '
+                        ),
+                        _react2.default.createElement(
+                            _text.MT,
+                            null,
+                            'This is ',
+                            _react2.default.createElement(
+                                _text.Code,
+                                null,
+                                '<MT/>'
+                            ),
+                            ' Medium Title! This Time centre is False  '
+                        ),
+                        _react2.default.createElement(
+                            _text.ST,
+                            { align: 'center' },
+                            'This is ',
+                            _react2.default.createElement(
+                                _text.Code,
+                                null,
+                                '<ST/>'
+                            ),
+                            ' Small Title '
+                        ),
+                        _react2.default.createElement(
+                            _text.H1,
+                            { align: 'center' },
+                            '<h1> tag as ',
+                            _react2.default.createElement(
+                                _text.Code,
+                                null,
+                                ' <H1 /> '
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                _layout.Grid50,
+                                { bgColor: '#f1f5f8' },
+                                _react2.default.createElement(
+                                    _text.P,
+                                    null,
+                                    'This is',
+                                    _react2.default.createElement(
+                                        _text.Code,
+                                        null,
+                                        '<Grid50/>'
+                                    ),
+                                    'Grid Layout Component With',
+                                    _react2.default.createElement(
+                                        _text.Code,
+                                        null,
+                                        '<Card/>'
+                                    ),
+                                    'Card area'
+                                )
+                            ),
                             _react2.default.createElement(
                                 _layout.Grid50,
                                 { bgColor: 'grey' },
                                 _react2.default.createElement(
                                     _text.P,
                                     { color: 'white' },
-                                    'THis is',
+                                    'This is',
                                     _react2.default.createElement(
                                         _text.Code,
                                         null,
                                         '<Grid50/>'
                                     ),
-                                    'half color:\'white\''
+                                    'Grid Layout Component With',
+                                    _react2.default.createElement(
+                                        _text.Code,
+                                        null,
+                                        '<Card/>'
+                                    ),
+                                    'Card area'
                                 )
                             ),
                             _react2.default.createElement(
                                 _layout.Grid50,
-                                { bgColor: '#f1f5f8' },
+                                null,
                                 _react2.default.createElement(
-                                    _text.P,
-                                    { color: 'black' },
-                                    'THis is',
+                                    _layout.Grid50,
+                                    { bgColor: 'grey' },
                                     _react2.default.createElement(
-                                        _text.Code,
-                                        null,
-                                        '<Grid50/>'
-                                    ),
-                                    'half color:\'black\''
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _layout.Grid50,
-                            null,
-                            _react2.default.createElement(
-                                _layout.Grid25,
-                                { bgColor: 'grey' },
+                                        _text.P,
+                                        { color: 'white' },
+                                        'THis is',
+                                        _react2.default.createElement(
+                                            _text.Code,
+                                            null,
+                                            '<Grid50/>'
+                                        ),
+                                        'half color:\'white\''
+                                    )
+                                ),
                                 _react2.default.createElement(
-                                    _text.P,
-                                    { color: 'white' },
-                                    'THis is',
-                                    _react2.default.createElement('br', null),
+                                    _layout.Grid50,
+                                    { bgColor: '#f1f5f8' },
                                     _react2.default.createElement(
-                                        _text.Code,
-                                        null,
-                                        '<Grid25/>'
+                                        _text.P,
+                                        { color: 'black' },
+                                        'THis is',
+                                        _react2.default.createElement(
+                                            _text.Code,
+                                            null,
+                                            '<Grid50/>'
+                                        ),
+                                        'half color:\'black\''
                                     )
                                 )
                             ),
                             _react2.default.createElement(
-                                _layout.Grid75,
-                                { bgColor: '#f1f5f8' },
-                                _react2.default.createElement(
-                                    _text.P,
-                                    { color: 'black' },
-                                    'THis is',
-                                    _react2.default.createElement('br', null),
-                                    _react2.default.createElement(
-                                        _text.Code,
-                                        null,
-                                        '<Grid75/>'
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _layout.FullWidth,
-                            null,
-                            _react2.default.createElement(
-                                _layout.Grid75,
-                                { bgColor: '#49494a' },
+                                _layout.Grid50,
+                                null,
                                 _react2.default.createElement(
                                     _layout.Grid25,
                                     { bgColor: 'grey' },
                                     _react2.default.createElement(
                                         _text.P,
-                                        { align: 'center' },
+                                        { color: 'white' },
+                                        'THis is',
+                                        _react2.default.createElement('br', null),
                                         _react2.default.createElement(
                                             _text.Code,
                                             null,
                                             '<Grid25/>'
-                                        ),
-                                        's'
+                                        )
                                     )
                                 ),
                                 _react2.default.createElement(
-                                    _layout.Grid25,
-                                    { bgColor: 'white' },
+                                    _layout.Grid75,
+                                    { bgColor: '#f1f5f8' },
                                     _react2.default.createElement(
                                         _text.P,
-                                        { align: 'center', fntSz: '1.2em', fntWt: '600' },
-                                        'inside'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    _layout.Grid25,
-                                    { bgColor: 'grey' },
-                                    _react2.default.createElement(
-                                        _text.P,
-                                        { align: 'center' },
+                                        { color: 'black' },
+                                        'THis is',
+                                        _react2.default.createElement('br', null),
                                         _react2.default.createElement(
                                             _text.Code,
                                             null,
@@ -8188,98 +8534,142 @@ var App = function (_React$Component) {
                                 )
                             ),
                             _react2.default.createElement(
-                                _layout.Grid25,
-                                { bgColor: 'grey' },
+                                _layout.FullWidth,
+                                null,
                                 _react2.default.createElement(
-                                    _text.P,
-                                    null,
-                                    '25 '
+                                    _layout.Grid75,
+                                    { bgColor: '#49494a' },
+                                    _react2.default.createElement(
+                                        _layout.Grid25,
+                                        { bgColor: 'grey' },
+                                        _react2.default.createElement(
+                                            _text.P,
+                                            { align: 'center' },
+                                            _react2.default.createElement(
+                                                _text.Code,
+                                                null,
+                                                '<Grid25/>'
+                                            ),
+                                            's'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        _layout.Grid25,
+                                        { bgColor: 'white' },
+                                        _react2.default.createElement(
+                                            _text.P,
+                                            { align: 'center', fntSz: '1.2em', fntWt: '600' },
+                                            'inside'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        _layout.Grid25,
+                                        { bgColor: 'grey' },
+                                        _react2.default.createElement(
+                                            _text.P,
+                                            { align: 'center' },
+                                            _react2.default.createElement(
+                                                _text.Code,
+                                                null,
+                                                '<Grid75/>'
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    _layout.Grid25,
+                                    { bgColor: 'grey' },
+                                    _react2.default.createElement(
+                                        _text.P,
+                                        null,
+                                        '25 '
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                _layout.FullWidth,
+                                null,
+                                _react2.default.createElement(
+                                    _layout.Grid25,
+                                    { bgColor: 'grey' },
+                                    _react2.default.createElement(
+                                        _text.P,
+                                        null,
+                                        '25 '
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    _layout.Grid25,
+                                    { bgColor: '#f1f5f8' },
+                                    _react2.default.createElement(
+                                        _text.P,
+                                        null,
+                                        '25 '
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    _layout.Grid25,
+                                    { bgColor: 'grey' },
+                                    _react2.default.createElement(
+                                        _text.P,
+                                        null,
+                                        '25 '
+                                    )
                                 )
                             )
                         ),
                         _react2.default.createElement(
-                            _layout.FullWidth,
+                            'div',
                             null,
                             _react2.default.createElement(
-                                _layout.Grid25,
-                                { bgColor: 'grey' },
+                                _text.H2,
+                                { align: 'center' },
+                                '<h2> tag as ',
                                 _react2.default.createElement(
-                                    _text.P,
+                                    _text.Code,
                                     null,
-                                    '25 '
+                                    '<H2/> '
                                 )
                             ),
                             _react2.default.createElement(
-                                _layout.Grid25,
-                                { bgColor: '#f1f5f8' },
+                                _text.H3,
+                                { align: 'center' },
+                                '<h3> tag as ',
                                 _react2.default.createElement(
-                                    _text.P,
+                                    _text.Code,
                                     null,
-                                    '25 '
+                                    '<H3/> '
                                 )
                             ),
                             _react2.default.createElement(
-                                _layout.Grid25,
-                                { bgColor: 'grey' },
+                                _text.H4,
+                                { align: 'center' },
+                                '<h4> tag as ',
                                 _react2.default.createElement(
-                                    _text.P,
+                                    _text.Code,
                                     null,
-                                    '25 '
+                                    '<H4/> '
                                 )
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        null,
-                        _react2.default.createElement(
-                            _text.H2,
-                            { align: 'center' },
-                            '<h2> tag as ',
+                            ),
                             _react2.default.createElement(
-                                _text.Code,
-                                null,
-                                '<H2/> '
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _text.H3,
-                            { align: 'center' },
-                            '<h3> tag as ',
+                                _text.H5,
+                                { align: 'center' },
+                                '<h5> tag as ',
+                                _react2.default.createElement(
+                                    _text.Code,
+                                    null,
+                                    '<H5/> '
+                                )
+                            ),
                             _react2.default.createElement(
-                                _text.Code,
-                                null,
-                                '<H3/> '
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _text.H4,
-                            { align: 'center' },
-                            '<h4> tag as ',
-                            _react2.default.createElement(
-                                _text.Code,
-                                null,
-                                '<H4/> '
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _text.H5,
-                            { align: 'center' },
-                            '<h5> tag as ',
-                            _react2.default.createElement(
-                                _text.Code,
-                                null,
-                                '<H5/> '
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _text.H6,
-                            { align: 'center' },
-                            '<h6> tag as ',
-                            _react2.default.createElement(
-                                _text.Code,
-                                null,
-                                '<H6/> '
+                                _text.H6,
+                                { align: 'center' },
+                                '<h6> tag as ',
+                                _react2.default.createElement(
+                                    _text.Code,
+                                    null,
+                                    '<H6/> '
+                                )
                             )
                         )
                     )
