@@ -2,8 +2,8 @@
 This is a react layout package to help you managing your UI layout
 
 ## Under Development
-## This is just the layout package and typography package. It will give you structure not design
-##### Getting Started
+##### This is just the layout package and typography package. It will give you structure not design
+# Getting Started
 ## For Testing in local environment
 ##### Download or clone the repository
 ##### install dependencie using `npm i`
