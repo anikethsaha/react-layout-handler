@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 import {   Wrapper} from "./component";
 import {
      Container ,
-     Grid50
+     Grid50,
+     Grid25,
+     Grid75,
+     FullWidth
 
 } from './component/layout'
 import { Card } from "./component/cards";
@@ -36,8 +39,8 @@ class App extends React.Component {
                     <ST align={'center'} >This is <Code>&lt;ST/&gt;</Code> Small Title </ST>
                     <H1 align={'center'}>&lt;h1&gt; tag as <Code> &lt;H1 /&gt; </Code></H1>
                     <div>
-                        <Grid50>
-                            <Card>
+                        <Grid50 bgColor={'white'}>
+
                             <P>
                             This is
                                 <Code>
@@ -48,11 +51,11 @@ class App extends React.Component {
                                 </Code>
                             Card area
                         </P>
-                            </Card>
+
                         </Grid50>
-                        <Grid50>
-                            <Card>
-                                <P>
+                        <Grid50 bgColor={'grey'}>
+
+                                <P color={'white'}>
                                     This is
                                         <Code>
                                           &lt;Grid50/&gt;
@@ -63,8 +66,81 @@ class App extends React.Component {
                                         </Code>
                                     Card area
                                 </P>
-                            </Card>
+
                         </Grid50>
+                        <Grid50>
+                            <Grid50 bgColor={'grey'}>
+                                <P color={'white'}>THis is
+                                    <Code>
+                                        &lt;Grid50/&gt;
+                                    </Code>
+                                    half color:'white'</P>
+                            </Grid50>
+                            <Grid50 bgColor={'white'}>
+                                <P color={'black'}>THis is
+                                <Code>
+                                    &lt;Grid50/&gt;
+                                </Code>
+                                half color:'black'</P>
+                            </Grid50>
+                        </Grid50>
+                        <Grid50>
+                            <Grid25 bgColor={'grey'}>
+                                <P color={'white'}>THis is
+                                <br/>
+                                <Code>
+                                    &lt;Grid25/&gt;
+                                </Code>
+                                </P>
+                            </Grid25>
+                            <Grid75 bgColor={'white'}>
+                                <P color={'black'}>THis is
+                                <br/>
+                                    <Code>
+                                        &lt;Grid75/&gt;
+                                    </Code>
+                                </P>
+                            </Grid75>
+                        </Grid50>
+                        <FullWidth>
+                            <Grid75 bgColor={'#49494a'}>
+                                <Grid25 bgColor={'grey'}>
+                                    <P align={'center'}>
+                                    <Code>
+                                        &lt;Grid25/&gt;
+                                    </Code>s
+                                    </P>
+                                </Grid25>
+                                <Grid25 bgColor={'white'}>
+                                    <P align={'center'} fntSz={'1.2em'} fntWt={'600'}>
+                                       inside
+                                    </P>
+                                </Grid25>
+                                <Grid25 bgColor={'grey'}>
+                                    <P align={'center'}>
+                                    <Code>
+                                      &lt;Grid75/&gt;
+                                    </Code>
+                                    </P>
+                                </Grid25>
+
+                            </Grid75>
+                            <Grid25 bgColor={'grey'}>
+                                    <P>25 </P>
+                            </Grid25>
+                        </FullWidth>
+                        <FullWidth>
+                                <Grid25 bgColor={'grey'}>
+                                    <P>25 </P>
+                                </Grid25>
+                                <Grid25 bgColor={'white'}>
+                                    <P>25 </P>
+                                </Grid25>
+                                <Grid25 bgColor={'grey'}>
+                                    <P>25 </P>
+                                </Grid25>
+                        </FullWidth>
+
                     </div>
                     <div>
                         <H2 align={'center'}>&lt;h2&gt; tag as <Code>&lt;H2/&gt; </Code></H2>

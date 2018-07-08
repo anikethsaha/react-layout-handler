@@ -15,6 +15,15 @@ class HeadOne extends React.Component {
         if(this.props.align){
             this.h1Style = Object.assign(this.h1Style,{textAlign:this.props.align })
         }
+        if(this.props.fntSz){
+            this.h1Style = Object.assign(this.h1Style,{fontSize:this.props.fntSz })
+        }
+        if(this.props.fntWt){
+            this.h1Style = Object.assign(this.h1Style,{fontWeight:this.props.fntWt })
+        }
+        if(this.props.color){
+            this.h1Style = Object.assign(this.h1Style,{color:this.props.color })
+        }
     }
 
     render() {

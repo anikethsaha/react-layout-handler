@@ -14,6 +14,15 @@ class HeadFour extends React.Component {
         if(this.props.align){
             this.h4Style = Object.assign(this.h4Style,{textAlign:this.props.align })
         }
+        if(this.props.fntSz){
+            this.h4Style = Object.assign(this.h4Style,{fontSize:this.props.fntSz })
+        }
+        if(this.props.fntWt){
+            this.h4Style = Object.assign(this.h4Style,{fontWeight:this.props.fntWt })
+        }
+        if(this.props.color){
+            this.h4Style = Object.assign(this.h4Style,{color:this.props.color })
+        }
     }
 
     render() {

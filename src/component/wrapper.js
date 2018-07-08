@@ -22,6 +22,9 @@ class Wrapper extends React.Component {
         if(this.props.backgroundColor){
             this.layoutStyle = Object.assign(this.layoutStyle,{backgroundColor : this.props.backgroundColor});
         }
+        if(screen.width <= 500){
+            this.layoutStyle = Object.assign(this.layoutStyle,{width:'100%',padding:'.5em 0' })
+        }
         console.log('this.layoutStyle :', this.layoutStyle);
     }
 

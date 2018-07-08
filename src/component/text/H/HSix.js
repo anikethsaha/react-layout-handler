@@ -15,6 +15,15 @@ class HeadSix extends React.Component {
         if(this.props.align){
             this.h6Style = Object.assign(this.h6Style,{textAlign:this.props.align })
         }
+        if(this.props.fntSz){
+            this.h6Style = Object.assign(this.h6Style,{fontSize:this.props.fntSz })
+        }
+        if(this.props.fntWt){
+            this.h6Style = Object.assign(this.h6Style,{fontWeight:this.props.fntWt })
+        }
+        if(this.props.color){
+            this.h6Style = Object.assign(this.h6Style,{color:this.props.color })
+        }
     }
 
     render() {

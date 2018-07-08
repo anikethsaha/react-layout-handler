@@ -1,31 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Grid50 extends React.Component {
+class Grid75 extends React.Component {
     constructor(props){
         super(props);
-        this.styleGrid50 = {
-            width : '46%',
+        this.styleGrid75 = {
+            width : '61%',
 
             padding : '.5em',
             float : 'left',
         }
         if(this.props.bgColor){
-            this.styleGrid50 = Object.assign(this.styleGrid50,{backgroundColor:this.props.bgColor })
+            this.styleGrid75 = Object.assign(this.styleGrid75,{backgroundColor:this.props.bgColor })
         }
         if(screen.width <= 500){
-            this.styleGrid50 = Object.assign(this.styleGrid50,{width:'100%',padding:'1em 0' })
+            this.styleGrid75 = Object.assign(this.styleGrid75,{width:'100%',padding:'1em 0' })
         }
     }
     render() {
         return (
-            <div style={this.styleGrid50}>
+            <div style={this.styleGrid75}>
                 {this.props.children}
             </div>
         );
     }
 }
 
-Grid50.propTypes = {};
+Grid75.propTypes = {};
 
-export default Grid50;
+export default Grid75;

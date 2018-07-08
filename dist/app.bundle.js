@@ -6298,6 +6298,9 @@ var Wrapper = function (_React$Component) {
         if (_this.props.backgroundColor) {
             _this.layoutStyle = Object.assign(_this.layoutStyle, { backgroundColor: _this.props.backgroundColor });
         }
+        if (screen.width <= 500) {
+            _this.layoutStyle = Object.assign(_this.layoutStyle, { width: '100%', padding: '.5em 0' });
+        }
         console.log('this.layoutStyle :', _this.layoutStyle);
         return _this;
     }
@@ -6485,6 +6488,9 @@ var Container = function (_React$Component) {
             padding: '0 10px',
             boxSizing: 'border-box'
         };
+        if (screen.width <= 500) {
+            _this.contianerStyle = Object.assign(_this.contianerStyle, { width: '100%', padding: '.5em 0' });
+        }
         return _this;
     }
 
@@ -6503,6 +6509,81 @@ var Container = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Container;
+
+/***/ }),
+
+/***/ "./src/component/layout/Grid25.js":
+/*!****************************************!*\
+  !*** ./src/component/layout/Grid25.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Grid25 = function (_React$Component) {
+    _inherits(Grid25, _React$Component);
+
+    function Grid25(props) {
+        _classCallCheck(this, Grid25);
+
+        var _this = _possibleConstructorReturn(this, (Grid25.__proto__ || Object.getPrototypeOf(Grid25)).call(this, props));
+
+        _this.styleGrid25 = {
+            width: '30.4%',
+
+            padding: '.5em',
+            float: 'left'
+        };
+        if (_this.props.bgColor) {
+            _this.styleGrid25 = Object.assign(_this.styleGrid25, { backgroundColor: _this.props.bgColor });
+        }
+        if (screen.width <= 500) {
+            _this.styleGrid25 = Object.assign(_this.styleGrid25, { width: '100%', padding: '1em 0' });
+        }
+        return _this;
+    }
+
+    _createClass(Grid25, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { style: this.styleGrid25 },
+                this.props.children
+            );
+        }
+    }]);
+
+    return Grid25;
+}(_react2.default.Component);
+
+Grid25.propTypes = {};
+
+exports.default = Grid25;
 
 /***/ }),
 
@@ -6547,11 +6628,17 @@ var Grid50 = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Grid50.__proto__ || Object.getPrototypeOf(Grid50)).call(this, props));
 
         _this.styleGrid50 = {
-            width: '47.5%',
-            marginLeft: '-.1em',
+            width: '46%',
+
             padding: '.5em',
             float: 'left'
         };
+        if (_this.props.bgColor) {
+            _this.styleGrid50 = Object.assign(_this.styleGrid50, { backgroundColor: _this.props.bgColor });
+        }
+        if (screen.width <= 500) {
+            _this.styleGrid50 = Object.assign(_this.styleGrid50, { width: '100%', padding: '1em 0' });
+        }
         return _this;
     }
 
@@ -6575,6 +6662,155 @@ exports.default = Grid50;
 
 /***/ }),
 
+/***/ "./src/component/layout/Grid75.js":
+/*!****************************************!*\
+  !*** ./src/component/layout/Grid75.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Grid75 = function (_React$Component) {
+    _inherits(Grid75, _React$Component);
+
+    function Grid75(props) {
+        _classCallCheck(this, Grid75);
+
+        var _this = _possibleConstructorReturn(this, (Grid75.__proto__ || Object.getPrototypeOf(Grid75)).call(this, props));
+
+        _this.styleGrid75 = {
+            width: '61%',
+
+            padding: '.5em',
+            float: 'left'
+        };
+        if (_this.props.bgColor) {
+            _this.styleGrid75 = Object.assign(_this.styleGrid75, { backgroundColor: _this.props.bgColor });
+        }
+        if (screen.width <= 500) {
+            _this.styleGrid75 = Object.assign(_this.styleGrid75, { width: '100%', padding: '1em 0' });
+        }
+        return _this;
+    }
+
+    _createClass(Grid75, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { style: this.styleGrid75 },
+                this.props.children
+            );
+        }
+    }]);
+
+    return Grid75;
+}(_react2.default.Component);
+
+Grid75.propTypes = {};
+
+exports.default = Grid75;
+
+/***/ }),
+
+/***/ "./src/component/layout/fullWidth.js":
+/*!*******************************************!*\
+  !*** ./src/component/layout/fullWidth.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FullWidth = function (_React$Component) {
+    _inherits(FullWidth, _React$Component);
+
+    function FullWidth(props) {
+        _classCallCheck(this, FullWidth);
+
+        var _this = _possibleConstructorReturn(this, (FullWidth.__proto__ || Object.getPrototypeOf(FullWidth)).call(this, props));
+
+        _this.styleFullwidth = {
+            width: '100%',
+            padding: '.5em',
+            float: 'left'
+        };
+        if (_this.props.bgColor) {
+            _this.styleFullwidth = Object.assign(_this.styleFullwidth, { backgroundColor: _this.props.bgColor });
+        }
+        if (screen.width <= 500) {
+            _this.styleFullwidth = Object.assign(_this.styleFullwidth, { width: '100%', padding: '1em 0' });
+        }
+        return _this;
+    }
+
+    _createClass(FullWidth, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { style: this.styleFullwidth },
+                this.props.children
+            );
+        }
+    }]);
+
+    return FullWidth;
+}(_react2.default.Component);
+
+FullWidth.propTypes = {};
+
+exports.default = FullWidth;
+
+/***/ }),
+
 /***/ "./src/component/layout/index.js":
 /*!***************************************!*\
   !*** ./src/component/layout/index.js ***!
@@ -6588,7 +6824,7 @@ exports.default = Grid50;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Grid50 = exports.Container = undefined;
+exports.FullWidth = exports.Grid75 = exports.Grid25 = exports.Grid50 = exports.Container = undefined;
 
 var _Container = __webpack_require__(/*! ./Container */ "./src/component/layout/Container.js");
 
@@ -6598,10 +6834,25 @@ var _Grid = __webpack_require__(/*! ./Grid50 */ "./src/component/layout/Grid50.j
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
+var _Grid3 = __webpack_require__(/*! ./Grid25 */ "./src/component/layout/Grid25.js");
+
+var _Grid4 = _interopRequireDefault(_Grid3);
+
+var _Grid5 = __webpack_require__(/*! ./Grid75 */ "./src/component/layout/Grid75.js");
+
+var _Grid6 = _interopRequireDefault(_Grid5);
+
+var _fullWidth = __webpack_require__(/*! ./fullWidth */ "./src/component/layout/fullWidth.js");
+
+var _fullWidth2 = _interopRequireDefault(_fullWidth);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.Container = _Container2.default;
 exports.Grid50 = _Grid2.default;
+exports.Grid25 = _Grid4.default;
+exports.Grid75 = _Grid6.default;
+exports.FullWidth = _fullWidth2.default;
 
 /***/ }),
 
@@ -6651,6 +6902,15 @@ var HeadFive = function (_React$Component) {
         };
         if (_this.props.align) {
             _this.h5Style = Object.assign(_this.h5Style, { textAlign: _this.props.align });
+        }
+        if (_this.props.fntSz) {
+            _this.h5Style = Object.assign(_this.h5Style, { fontSize: _this.props.fntSz });
+        }
+        if (_this.props.fntWt) {
+            _this.h5Style = Object.assign(_this.h5Style, { fontWeight: _this.props.fntWt });
+        }
+        if (_this.props.color) {
+            _this.h5Style = Object.assign(_this.h5Style, { color: _this.props.color });
         }
         return _this;
     }
@@ -6718,6 +6978,15 @@ var HeadFour = function (_React$Component) {
         };
         if (_this.props.align) {
             _this.h4Style = Object.assign(_this.h4Style, { textAlign: _this.props.align });
+        }
+        if (_this.props.fntSz) {
+            _this.h4Style = Object.assign(_this.h4Style, { fontSize: _this.props.fntSz });
+        }
+        if (_this.props.fntWt) {
+            _this.h4Style = Object.assign(_this.h4Style, { fontWeight: _this.props.fntWt });
+        }
+        if (_this.props.color) {
+            _this.h4Style = Object.assign(_this.h4Style, { color: _this.props.color });
         }
         return _this;
     }
@@ -6787,6 +7056,15 @@ var HeadOne = function (_React$Component) {
         if (_this.props.align) {
             _this.h1Style = Object.assign(_this.h1Style, { textAlign: _this.props.align });
         }
+        if (_this.props.fntSz) {
+            _this.h1Style = Object.assign(_this.h1Style, { fontSize: _this.props.fntSz });
+        }
+        if (_this.props.fntWt) {
+            _this.h1Style = Object.assign(_this.h1Style, { fontWeight: _this.props.fntWt });
+        }
+        if (_this.props.color) {
+            _this.h1Style = Object.assign(_this.h1Style, { color: _this.props.color });
+        }
         return _this;
     }
 
@@ -6854,6 +7132,15 @@ var HeadSix = function (_React$Component) {
         };
         if (_this.props.align) {
             _this.h6Style = Object.assign(_this.h6Style, { textAlign: _this.props.align });
+        }
+        if (_this.props.fntSz) {
+            _this.h6Style = Object.assign(_this.h6Style, { fontSize: _this.props.fntSz });
+        }
+        if (_this.props.fntWt) {
+            _this.h6Style = Object.assign(_this.h6Style, { fontWeight: _this.props.fntWt });
+        }
+        if (_this.props.color) {
+            _this.h6Style = Object.assign(_this.h6Style, { color: _this.props.color });
         }
         return _this;
     }
@@ -6923,6 +7210,16 @@ var HeadThree = function (_React$Component) {
         if (_this.props.align) {
             _this.h3Style = Object.assign(_this.h3Style, { textAlign: _this.props.align });
         }
+        if (_this.props.fntSz) {
+            _this.h3Style = Object.assign(_this.h3Style, { fontSize: _this.props.fntSz });
+        }
+        if (_this.props.fntWt) {
+            _this.h3Style = Object.assign(_this.h3Style, { fontWeight: _this.props.fntWt });
+        }
+        if (_this.props.color) {
+            _this.h3Style = Object.assign(_this.h3Style, { color: _this.props.color });
+        }
+
         return _this;
     }
 
@@ -6990,6 +7287,15 @@ var HeadTwo = function (_React$Component) {
         };
         if (_this.props.align) {
             _this.h2Style = Object.assign(_this.h2Style, { textAlign: _this.props.align });
+        }
+        if (_this.props.fntSz) {
+            _this.h2Style = Object.assign(_this.h2Style, { fontSize: _this.props.fntSz });
+        }
+        if (_this.props.fntWt) {
+            _this.h2Style = Object.assign(_this.h2Style, { fontWeight: _this.props.fntWt });
+        }
+        if (_this.props.color) {
+            _this.h2Style = Object.assign(_this.h2Style, { color: _this.props.color });
         }
         return _this;
     }
@@ -7109,6 +7415,18 @@ var P = function (_React$Component) {
             display: 'block',
             marginBottom: '10px'
         };
+        if (_this.props.align) {
+            _this.pStyle = Object.assign(_this.pStyle, { textAlign: _this.props.align });
+        }
+        if (_this.props.fntSz) {
+            _this.pStyle = Object.assign(_this.pStyle, { fontSize: _this.props.fntSz });
+        }
+        if (_this.props.fntWt) {
+            _this.pStyle = Object.assign(_this.pStyle, { fontWeight: _this.props.fntWt });
+        }
+        if (_this.props.color) {
+            _this.pStyle = Object.assign(_this.pStyle, { color: _this.props.color });
+        }
         return _this;
     }
 
@@ -7709,26 +8027,77 @@ var App = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             _layout.Grid50,
+                            { bgColor: 'white' },
+                            _react2.default.createElement(
+                                _text.P,
+                                null,
+                                'This is',
+                                _react2.default.createElement(
+                                    _text.Code,
+                                    null,
+                                    '<Grid50/>'
+                                ),
+                                'Grid Layout Component With',
+                                _react2.default.createElement(
+                                    _text.Code,
+                                    null,
+                                    '<Card/>'
+                                ),
+                                'Card area'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            _layout.Grid50,
+                            { bgColor: 'grey' },
+                            _react2.default.createElement(
+                                _text.P,
+                                { color: 'white' },
+                                'This is',
+                                _react2.default.createElement(
+                                    _text.Code,
+                                    null,
+                                    '<Grid50/>'
+                                ),
+                                'Grid Layout Component With',
+                                _react2.default.createElement(
+                                    _text.Code,
+                                    null,
+                                    '<Card/>'
+                                ),
+                                'Card area'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            _layout.Grid50,
                             null,
                             _react2.default.createElement(
-                                _cards.Card,
-                                null,
+                                _layout.Grid50,
+                                { bgColor: 'grey' },
                                 _react2.default.createElement(
                                     _text.P,
-                                    null,
-                                    'This is',
+                                    { color: 'white' },
+                                    'THis is',
                                     _react2.default.createElement(
                                         _text.Code,
                                         null,
                                         '<Grid50/>'
                                     ),
-                                    'Grid Layout Component With',
+                                    'half color:\'white\''
+                                )
+                            ),
+                            _react2.default.createElement(
+                                _layout.Grid50,
+                                { bgColor: 'white' },
+                                _react2.default.createElement(
+                                    _text.P,
+                                    { color: 'black' },
+                                    'THis is',
                                     _react2.default.createElement(
                                         _text.Code,
                                         null,
-                                        '<Card/>'
+                                        '<Grid50/>'
                                     ),
-                                    'Card area'
+                                    'half color:\'black\''
                                 )
                             )
                         ),
@@ -7736,24 +8105,117 @@ var App = function (_React$Component) {
                             _layout.Grid50,
                             null,
                             _react2.default.createElement(
-                                _cards.Card,
-                                null,
+                                _layout.Grid25,
+                                { bgColor: 'grey' },
+                                _react2.default.createElement(
+                                    _text.P,
+                                    { color: 'white' },
+                                    'THis is',
+                                    _react2.default.createElement('br', null),
+                                    _react2.default.createElement(
+                                        _text.Code,
+                                        null,
+                                        '<Grid25/>'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                _layout.Grid75,
+                                { bgColor: 'white' },
+                                _react2.default.createElement(
+                                    _text.P,
+                                    { color: 'black' },
+                                    'THis is',
+                                    _react2.default.createElement('br', null),
+                                    _react2.default.createElement(
+                                        _text.Code,
+                                        null,
+                                        '<Grid75/>'
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            _layout.FullWidth,
+                            null,
+                            _react2.default.createElement(
+                                _layout.Grid75,
+                                { bgColor: '#49494a' },
+                                _react2.default.createElement(
+                                    _layout.Grid25,
+                                    { bgColor: 'grey' },
+                                    _react2.default.createElement(
+                                        _text.P,
+                                        { align: 'center' },
+                                        _react2.default.createElement(
+                                            _text.Code,
+                                            null,
+                                            '<Grid25/>'
+                                        ),
+                                        's'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    _layout.Grid25,
+                                    { bgColor: 'white' },
+                                    _react2.default.createElement(
+                                        _text.P,
+                                        { align: 'center', fntSz: '1.2em', fntWt: '600' },
+                                        'inside'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    _layout.Grid25,
+                                    { bgColor: 'grey' },
+                                    _react2.default.createElement(
+                                        _text.P,
+                                        { align: 'center' },
+                                        _react2.default.createElement(
+                                            _text.Code,
+                                            null,
+                                            '<Grid75/>'
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                _layout.Grid25,
+                                { bgColor: 'grey' },
                                 _react2.default.createElement(
                                     _text.P,
                                     null,
-                                    'This is',
-                                    _react2.default.createElement(
-                                        _text.Code,
-                                        null,
-                                        '<Grid50/>'
-                                    ),
-                                    'Grid Layout Component With',
-                                    _react2.default.createElement(
-                                        _text.Code,
-                                        null,
-                                        '<Card/>'
-                                    ),
-                                    'Card area'
+                                    '25 '
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            _layout.FullWidth,
+                            null,
+                            _react2.default.createElement(
+                                _layout.Grid25,
+                                { bgColor: 'grey' },
+                                _react2.default.createElement(
+                                    _text.P,
+                                    null,
+                                    '25 '
+                                )
+                            ),
+                            _react2.default.createElement(
+                                _layout.Grid25,
+                                { bgColor: 'white' },
+                                _react2.default.createElement(
+                                    _text.P,
+                                    null,
+                                    '25 '
+                                )
+                            ),
+                            _react2.default.createElement(
+                                _layout.Grid25,
+                                { bgColor: 'grey' },
+                                _react2.default.createElement(
+                                    _text.P,
+                                    null,
+                                    '25 '
                                 )
                             )
                         )

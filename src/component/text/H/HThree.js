@@ -15,6 +15,16 @@ class HeadThree extends React.Component {
         if(this.props.align){
             this.h3Style = Object.assign(this.h3Style,{textAlign:this.props.align })
         }
+        if(this.props.fntSz){
+            this.h3Style = Object.assign(this.h3Style,{fontSize:this.props.fntSz })
+        }
+        if(this.props.fntWt){
+            this.h3Style = Object.assign(this.h3Style,{fontWeight:this.props.fntWt })
+        }
+        if(this.props.color){
+            this.h3Style = Object.assign(this.h3Style,{color:this.props.color })
+        }
+
     }
 
     render() {

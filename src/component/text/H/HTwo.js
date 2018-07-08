@@ -15,6 +15,15 @@ class HeadTwo extends React.Component {
         if(this.props.align){
             this.h2Style = Object.assign(this.h2Style,{textAlign:this.props.align })
         }
+        if(this.props.fntSz){
+            this.h2Style = Object.assign(this.h2Style,{fontSize:this.props.fntSz })
+        }
+        if(this.props.fntWt){
+            this.h2Style = Object.assign(this.h2Style,{fontWeight:this.props.fntWt })
+        }
+        if(this.props.color){
+            this.h2Style = Object.assign(this.h2Style,{color:this.props.color })
+        }
     }
 
     render() {

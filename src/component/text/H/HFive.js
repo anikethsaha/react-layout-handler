@@ -15,6 +15,15 @@ class HeadFive extends React.Component {
         if(this.props.align){
             this.h5Style = Object.assign(this.h5Style,{textAlign:this.props.align })
         }
+        if(this.props.fntSz){
+            this.h5Style = Object.assign(this.h5Style,{fontSize:this.props.fntSz })
+        }
+        if(this.props.fntWt){
+            this.h5Style = Object.assign(this.h5Style,{fontWeight:this.props.fntWt })
+        }
+        if(this.props.color){
+            this.h5Style = Object.assign(this.h5Style,{color:this.props.color })
+        }
     }
 
     render() {
