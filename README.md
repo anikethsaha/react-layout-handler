@@ -12,5 +12,5 @@ This is a react layout package to help you managing your UI layout
 
 ## Check the `src/index.js` and see through the components used 
 ## Component files are in `src/component`
-## How to contribut
+## How to contribute
 ##### Do a pull request and make changes and merge the changes
