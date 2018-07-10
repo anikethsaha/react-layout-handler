@@ -2,6 +2,7 @@
 This is a react layout package to help you managing your UI layout
 
 ## Under Development
+NOTE : The package may be unstable till it is in under development.
 ##### This is just the layout package and typography package. It will give you structure not design
 # Getting Started
 ##### `npm i react-layout-handler` 
@@ -13,13 +14,13 @@ This is a react layout package to help you managing your UI layout
 	     Grid25,
 	     Grid75,
 	     FullWidth
-	} from 'react-layout-handler/layout'
+	} from 'react-layout-handler'
 	import {
 	    Menu,
 	    Nav,
 	    MenuContainer
-	} from 'react-layout-handler/navbar'
-	import { Card } from ".react-layout-handler/cards";
+	} from 'react-layout-handler'
+	import { Card } from ".react-layout-handler";
 	import {
 	     H1,
 	     H2 ,
@@ -33,7 +34,7 @@ This is a react layout package to help you managing your UI layout
 	     MT,
 	     ST,
 	     P
-	    } from "react-layout-handler/text";
+	    } from "react-layout-handler";
 	 
 ##### use this components 
 
@@ -48,6 +49,10 @@ This is a react layout package to help you managing your UI layout
 ##### Component files are in `src/component`
 
 
+
+
+## How to contribute
+##### Do a pull request and make changes and merge the changes
 
 
 ## How to contribute
