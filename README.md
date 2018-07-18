@@ -1,4 +1,6 @@
 # react-layout-handler
+[![NPM](https://nodei.co/npm/react-layout-handler.png)](https://nodei.co/npm/react-layout-handler/)
+
 This is a react layout package to help you managing your UI layout
 
 ## Under Development
