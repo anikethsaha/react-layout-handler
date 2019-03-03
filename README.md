@@ -1,11 +1,13 @@
 # react-layout-handler
+[![NPM](https://nodei.co/npm/react-layout-handler.png)](https://nodei.co/npm/react-layout-handler/)
+
 This is a react layout package to help you managing your UI layout
 
 ## Under Development
 NOTE : The package may be unstable till it is in under development.
 ##### This is just the layout package and typography package. It will give you structure not design
 # Getting Started
-##### `npm i react-layout-handler` 
+##### `npm i react-layout-handler`
 
 	import {   Wrapper} from "react-layout-handler";
 	import {
@@ -35,8 +37,8 @@ NOTE : The package may be unstable till it is in under development.
 	     ST,
 	     P
 	    } from "react-layout-handler";
-	 
-##### use this components 
+
+##### use this components
 
 ## Documentation is getting prepared -coming soon
 
@@ -45,7 +47,7 @@ NOTE : The package may be unstable till it is in under development.
 ##### install dependencie using `npm i`
 ##### To start the development server and to run the project type `npm run dev `
 ##### To make any changes and run again `npm run build`
-##### Check the `src/index.js` and see through the components used 
+##### Check the `src/index.js` and see through the components used
 ##### Component files are in `src/component`
 
 
