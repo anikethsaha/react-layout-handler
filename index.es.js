@@ -1,6 +1,5 @@
 
-export * from './wrapper';;
-
+export {   Wrapper} from "./src";
 export {
      Container ,
      Grid50,
@@ -8,14 +7,14 @@ export {
      Grid75,
      FullWidth
 
-} from './layout'
+} from './src'
 export {
     Menu,
     Nav,
     MenuContainer
 
-} from './navbar'
-export { Card } from "./cards";
+} from './src'
+export { Card } from "./src";
 export {
      H1,
      H2 ,
@@ -29,7 +28,7 @@ export {
      MT,
      ST,
      P
-    } from "./text";
+    } from "./src";
 
 
 

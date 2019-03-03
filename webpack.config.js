@@ -1,31 +1,24 @@
 const path = require('path');
-var webpack = require('webpack');
-const nodeExternals = require('webpack-node-externals');
-module.exports = {
-    entry: './src/index.js',
-      output: {
-        path: path.resolve(__dirname, "dist"),
-          filename: './app.bundle.js',
-           publicPath: '/'
 
-      },
-    target : 'web',
+module.exports = {
+    entry: path.join(__dirname, "src/index.js"),
+    output: {
+        path: path.join(__dirname, "dist"),
+        filename: "app.bundle.js"
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                test: /\.(js|jsx)$/,
+                use: "babel-loader",
+                exclude: /node_modules/
             }
         ]
     },
+    resolve: {
+        extensions: [".js", ".jsx"]
+    },
     devServer: {
-        historyApiFallback: true,
-    },
-    stats: {
-        colors: true
-    },
-    devtool: 'source-map'
+        port: 3001
+    }
 };

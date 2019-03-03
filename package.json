@@ -1,14 +1,26 @@
 {
-  "name": "react-skeleton",
-  "version": "1.0.0",
+  "name": "react-layout-handler",
+  "version": "1.0.19",
   "description": "this is component layout helping package",
-  "main": "index.js",
+  "main": "dist/app.bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "webpack-dev-server --mode=development",
-    "build" : "webpack --watch --mode=development"
+    "dev": "webpack-dev-server --mode=development",
+    "build": "webpack --watch --mode=development",
+    "transpile": "babel src -d dist ",
+    "prepublishOnly": "npm run transpile"
   },
-  "author": "aniketh saha",
+  "keywords": [
+    "react",
+    "UI",
+    "layout",
+    "frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anikethsaha/react-layout-handler"
+  },
+  "author": "Aniketh Saha website: <anik220798@gmail.com> (http://www.anikethsaha.me)",
   "license": "ISC",
   "dependencies": {
     "babel-preset-env": "^1.7.0",
@@ -22,7 +34,7 @@
     "babel-preset-react": "^6.24.1",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4",
+    "webpack-dev-server": "^3.2.1",
     "webpack-node-externals": "^1.7.2"
   }
 }
